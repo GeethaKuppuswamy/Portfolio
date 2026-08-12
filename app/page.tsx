@@ -1,33 +1,39 @@
 const cases = [
   {
-    number: "01",
-    eyebrow: "Platform launch · Intuit",
-    title: "Turning a fragmented launch into a measurable growth engine",
-    challenge: "Product and Engineering entered a revenue-critical launch with competing priorities, late scope pressure, and dependencies spread across teams.",
-    move: "Built a shared operating plan, made customer and revenue tradeoffs explicit, and used a weekly steerco plus decision log to keep the core launch protected.",
-    outcome: "5,000+ accountant signups in the first quarter, with adoption, drop-off, SLA, and revenue signals visible in one executive view.",
-    stat: "5,000+",
-    label: "Q1 signups",
+    number: "01", eyebrow: "Platform launch · Intuit", title: "Launching Intuit Accountant Suite as a measurable growth engine",
+    challenge: "A revenue-critical replacement for the legacy accountant experience faced competing priorities, late scope pressure, and dependencies across teams.",
+    move: "Built the integrated operating plan, instituted a reusable Go/No-Go framework, and aligned Product and Engineering through explicit tradeoffs, a weekly steerco, and decision logs.",
+    outcome: "Launched successfully with 5,000+ accountant signups in the first quarter and one executive view of adoption, drop-off, SLA, and revenue signals.", stat: "5,000+", label: "Q1 signups",
   },
   {
-    number: "02",
-    eyebrow: "M&A integration · Chegg",
-    title: "Converting acquisition strategy into realized value",
+    number: "02", eyebrow: "Cross-org operating model · Intuit", title: "Turning Mid-Market demand chaos into a repeatable system",
+    challenge: "70–90+ unranked initiatives arrived across two organizations with blank owners, moving requirements, side-channel negotiations, and a hard commitment deadline.",
+    move: "Created a single intake, forced a 1-to-N stack rank, led technical deep dives for conditional commitments, and established mirrored owners, hotspot resolution, and a weekly cadence.",
+    outcome: "Closed 185+ requests in one week, moved 11 capability programs from 4 aligned to 10 aligned and 1 partially aligned, and reduced escalations by approximately 6×.", stat: "185+", label: "requests closed in one week",
+  },
+  {
+    number: "03", eyebrow: "AI adoption · Intuit", title: "Building an AI-native operating culture—not a training campaign",
+    challenge: "Program leaders needed repeatable ways to apply AI to real work, with adoption measured through behavior rather than course completion.",
+    move: "Ran hands-on workshops, built reusable workflows and prompt libraries, launched an AI Champion network, and scaled learning through 14 practical sessions for approximately 400 practitioners.",
+    outcome: "10 of 11 TPMs built Claude agents within two weeks of general availability; 80%+ used GenAI weekly, and reusable workflows saved 100+ PMO hours.", stat: "100+", label: "PMO hours saved",
+  },
+  {
+    number: "04", eyebrow: "0→1 enterprise bet · Intuit", title: "Translating AI + Human Intelligence strategy into execution",
+    challenge: "An enterprise-scale bet combining agentic AI with expert services needed to move from an ambitious idea to sequenced, measurable execution.",
+    move: "Connected product vision to engineering plans, operating cadences, dependencies, and outcome measures across the portfolio.",
+    outcome: "Advanced the AI + HI big bet from 0 to 1 while sustaining 99.99% SLA performance and delivering adoption at 148–214% of target.", stat: "148–214%", label: "of adoption targets",
+  },
+  {
+    number: "05", eyebrow: "M&A integration · Chegg", title: "Converting acquisition strategy into realized value",
     challenge: "Mathway needed to be integrated without losing momentum across product, technology, and operating teams.",
-    move: "Orchestrated the cross-functional roadmap, surfaced critical dependencies early, and established a governance rhythm anchored in business outcomes.",
-    outcome: "$8M in value delivered within the first year while creating a repeatable integration model for future acquisitions.",
-    stat: "$8M",
-    label: "first-year value",
+    move: "Orchestrated the cross-functional roadmap, surfaced critical dependencies early, and established governance anchored in business outcomes.",
+    outcome: "$8M in value delivered within the first year while creating a repeatable integration model for future acquisitions.", stat: "$8M", label: "first-year value",
   },
   {
-    number: "03",
-    eyebrow: "AI adoption · Intuit",
-    title: "Moving AI from curiosity to practical execution",
-    challenge: "Program leaders needed useful, repeatable ways to apply AI—not another abstract transformation message.",
-    move: "Drove an AI-focused Program Management community serving ~400 practitioners, established an AI Champion network, and delivered 14 practical speaker sessions.",
-    outcome: "Created a scalable peer-learning system that accelerated experimentation, shared practices, and day-to-day adoption.",
-    stat: "400",
-    label: "practitioners served",
+    number: "06", eyebrow: "Enterprise transformation · PayPal", title: "Scaling faster, safer launches across a global platform",
+    challenge: "Inconsistent launch practices and uneven Agile adoption slowed execution across a large, distributed technology organization.",
+    move: "Designed PayPal’s first cross-functional Launch Process Review and led Scrum adoption across 58 teams.",
+    outcome: "The review became a company standard; PayPal Giving Fund launch time fell from weeks to two days and manual verification effort dropped 35%.", stat: "58", label: "teams transformed",
   },
 ];
 
@@ -38,71 +44,19 @@ const principles = [
 ];
 
 export default function Home() {
-  return (
-    <main>
-      <nav className="nav shell" aria-label="Primary navigation">
-        <a className="monogram" href="#top" aria-label="Geetha Kuppuswamy home">GK</a>
-        <div className="navlinks">
-          <a href="#impact">Impact</a><a href="#work">Selected work</a><a href="#approach">Approach</a>
-        </div>
-        <a className="nav-cta" href="mailto:geetha.kuppuswamy@gmail.com">Let’s talk <span>↗</span></a>
-      </nav>
-
-      <section className="hero shell" id="top">
-        <div className="availability"><span /> Leadership portfolio · Technology, transformation &amp; scale</div>
-        <h1>I turn complex<br/>technology bets into<br/><em>business outcomes.</em></h1>
-        <div className="hero-bottom">
-          <p>Two decades connecting product vision, engineering execution, and operating systems to deliver measurable outcomes at scale.</p>
-          <div className="hero-actions">
-            <a className="button primary" href="#work">Explore my work <span>↓</span></a>
-            <a className="button secondary" href="https://www.linkedin.com/in/geetha-kuppuswamy" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          </div>
-        </div>
-      </section>
-
-      <section className="metric-band" id="impact">
-        <div className="shell metrics">
-          <div><strong>20+</strong><span>Years leading change</span></div>
-          <div><strong>~400</strong><span>Engineers in portfolio scope</span></div>
-          <div><strong>$125M+</strong><span>Business impact</span></div>
-          <div><strong>10</strong><span>TPMs led</span></div>
-        </div>
-      </section>
-
-      <section className="intro shell section">
-        <p className="kicker">What I do</p>
-        <div className="intro-copy">
-          <h2>Strategy is only valuable<br/>when teams can <em>execute it.</em></h2>
-          <p>I build the connective tissue that ambitious organizations need: shared priorities, transparent decisions, durable operating rhythms, and teams empowered to deliver. My experience spans AI, platform, compliance, M&amp;A, and revenue-critical products at Intuit, Chegg, and PayPal.</p>
-        </div>
-      </section>
-
-      <section className="work section" id="work">
-        <div className="shell section-head"><p className="kicker">Selected work</p><p>Three examples of how I lead through ambiguity, align organizations, and deliver measurable results.</p></div>
-        <div className="shell case-list">
-          {cases.map((item) => <article className="case" key={item.number}>
-            <div className="case-num">{item.number}</div>
-            <div className="case-main"><p className="eyebrow">{item.eyebrow}</p><h3>{item.title}</h3>
-              <div className="case-detail"><div><b>Context</b><p>{item.challenge}</p></div><div><b>Leadership move</b><p>{item.move}</p></div><div><b>Result</b><p>{item.outcome}</p></div></div>
-            </div>
-            <div className="case-stat"><strong>{item.stat}</strong><span>{item.label}</span></div>
-          </article>)}
-        </div>
-      </section>
-
-      <section className="approach shell section" id="approach">
-        <div className="approach-title"><p className="kicker">How I lead</p><h2>Clarity.<br/>Momentum.<br/><em>Trust.</em></h2></div>
-        <div className="principles">{principles.map(([n,t,d]) => <div className="principle" key={n}><span>{n}</span><div><h3>{t}</h3><p>{d}</p></div></div>)}</div>
-      </section>
-
-      <section className="career section"><div className="shell"><p className="kicker">Career highlights</p><div className="timeline">
-        <div><span>2021—2026</span><h3>Intuit</h3><p>TPM Leader · AI, platform, compliance &amp; revenue-critical portfolios</p></div>
-        <div><span>2018—2020</span><h3>Chegg</h3><p>PMO Leader · M&amp;A integration &amp; enterprise prioritization</p></div>
-        <div><span>Earlier</span><h3>PayPal · WaMu</h3><p>Transformation, global platforms &amp; large-scale migrations</p></div>
-      </div><p className="footnote">Also: Northeastern University lecturer · U.S. patent holder</p></div></section>
-
-      <section className="contact shell section"><p className="kicker">Continue the conversation</p><h2>Complexity becomes progress<br/>when clarity creates momentum.</h2><p>This portfolio captures a career spent turning ambitious ideas into durable systems, aligned teams, and measurable business results.</p><div className="contact-actions"><a href="mailto:geetha.kuppuswamy@gmail.com">geetha.kuppuswamy@gmail.com ↗</a><a href="https://www.linkedin.com/in/geetha-kuppuswamy" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div></section>
-      <footer className="shell"><span>Geetha Kuppuswamy</span><span>San Jose, California</span><span>© 2026</span></footer>
-    </main>
-  );
+  return <main>
+    <nav className="nav shell" aria-label="Primary navigation"><a className="monogram" href="#top" aria-label="Geetha Kuppuswamy home">GK</a><div className="navlinks"><a href="#impact">Impact</a><a href="#work">Selected work</a><a href="#approach">How I lead</a><a href="#career">Career</a></div><a className="nav-cta" href="mailto:geetha.kuppuswamy@gmail.com">Let’s talk <span>↗</span></a></nav>
+    <section className="hero shell" id="top">
+      <div className="availability"><span /> Executive TPM leadership · Technology, transformation &amp; scale</div>
+      <h1>I turn complex<br/>technology bets into<br/><em>business outcomes.</em></h1>
+      <div className="hero-bottom"><p>Two decades connecting product vision, engineering execution, and operating systems to deliver measurable outcomes at scale.</p><div className="hero-actions"><a className="button primary" href="#work">Explore my work <span>↓</span></a><a className="button secondary" href="https://www.linkedin.com/in/geetha-kuppuswamy" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div>
+      <div className="hero-metrics" id="impact"><div><strong>$125M+</strong><span>Portfolio impact</span></div><div><strong>~400</strong><span>Engineers in scope</span></div><div><strong>10</strong><span>TPMs led</span></div><div><strong>20+</strong><span>Years leading change</span></div></div>
+    </section>
+    <section className="intro shell section"><p className="kicker">How I lead</p><div className="intro-copy"><h2>Strategy is only valuable<br/>when teams can <em>execute it.</em></h2><p>I bring clarity to ambiguous, high-stakes work—connecting strategy to execution, aligning leaders around explicit tradeoffs, and building operating systems that outlast the moment. My experience spans AI, platform, compliance, M&amp;A, and revenue-critical products at Intuit, Chegg, and PayPal.</p></div></section>
+    <section className="work section" id="work"><div className="shell section-head"><p className="kicker">Selected work</p><p>Six examples of how I lead through ambiguity, align organizations, create durable systems, and deliver measurable results.</p></div><div className="shell case-list">{cases.map(item=><article className="case" key={item.number}><div className="case-num">{item.number}</div><div className="case-main"><p className="eyebrow">{item.eyebrow}</p><h3>{item.title}</h3><div className="case-detail"><div><b>Context</b><p>{item.challenge}</p></div><div><b>Leadership move</b><p>{item.move}</p></div><div><b>Result</b><p>{item.outcome}</p></div></div></div><div className="case-stat"><strong>{item.stat}</strong><span>{item.label}</span></div></article>)}</div></section>
+    <section className="approach shell section" id="approach"><div className="approach-title"><p className="kicker">Leadership signature</p><h2>Clarity.<br/>Momentum.<br/><em>Trust.</em></h2></div><div className="principles">{principles.map(([n,t,d])=><div className="principle" key={n}><span>{n}</span><div><h3>{t}</h3><p>{d}</p></div></div>)}</div></section>
+    <section className="career section" id="career"><div className="shell"><p className="kicker">Career highlights</p><div className="timeline"><div><span>2021—2026</span><h3>Intuit</h3><p>TPM Leader · AI, platform, Mid-Market, compliance &amp; revenue-critical portfolios</p></div><div><span>2018—2020</span><h3>Chegg</h3><p>PMO Leader · M&amp;A integration &amp; enterprise prioritization</p></div><div><span>Earlier</span><h3>PayPal · WaMu</h3><p>Transformation, global platforms &amp; large-scale migrations</p></div></div><div className="distinctions"><div><span>Educator</span><h3>Part-time Faculty</h3><p>Taught Graduate Agile Project Management at Northeastern University.</p></div><div><span>Inventor</span><h3>U.S. Patent #11,392,681</h3><p>Co-inventor of “Authentication Based on Object Recognition,” a location-aware, image-based MFA system.</p></div></div></div></section>
+    <section className="contact shell section"><p className="kicker">Continue the conversation</p><h2>Complexity becomes progress<br/>when clarity creates momentum.</h2><p>This portfolio captures a career spent turning ambitious ideas into durable systems, aligned teams, and measurable business results.</p><div className="contact-actions"><a href="mailto:geetha.kuppuswamy@gmail.com">geetha.kuppuswamy@gmail.com ↗</a><a href="https://www.linkedin.com/in/geetha-kuppuswamy" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div></section>
+    <footer className="shell"><span>Geetha Kuppuswamy</span><span>San Jose, California</span><span>© 2026</span></footer>
+  </main>;
 }
