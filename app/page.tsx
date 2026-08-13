@@ -45,7 +45,7 @@ const principles = [
 
 export default function Home() {
   return <main>
-    <nav className="nav shell" aria-label="Primary navigation"><a className="monogram" href="#top" aria-label="Geetha Kuppuswamy home">GK</a><div className="navlinks"><a href="#impact">Impact</a><a href="#work">Selected work</a><a href="#approach">How I lead</a><a href="#career">Career</a></div><a className="nav-cta" href="mailto:geetha.kuppuswamy@gmail.com">Let’s talk <span>↗</span></a></nav>
+    <nav className="nav shell" aria-label="Primary navigation"><a className="monogram" href="#top" aria-label="Geetha Kuppuswamy home">GK</a><div className="navlinks"><a href="#impact">Impact</a><a href="#work">Selected work</a><a href="#approach">How I lead</a><a href="#career">Career</a></div><a className="nav-cta" href="https://www.linkedin.com/in/geetha-kuppuswamy" target="_blank" rel="noreferrer" aria-label="View Geetha Kuppuswamy on LinkedIn">LinkedIn <span>↗</span></a></nav>
     <section className="hero shell" id="top">
       <div className="availability"><span /> Executive TPM leadership · Technology, transformation &amp; scale</div>
       <h1>I turn complex<br/>technology bets into<br/><em>business outcomes.</em></h1>
